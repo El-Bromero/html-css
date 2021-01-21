@@ -9,6 +9,7 @@
     
     <header><h1>Contact Us</h1></header>
 
+    <!-- Nav bar to other pages -->
     <nav>
         <a href="index.html">Bio</a>
         <a href="gallery.html">Gallery</a>
@@ -16,18 +17,30 @@
 
     <hr>
 
+    <!-- Form section. Using formspree.io api for form functionality -->
     <section>
-        <form>
-            <label for="name">Name</label><br>
-            <input type="text" id="name" name="name"><br>
+        <form action="https://formspree.io/f/moqprwoq" method="POST">
 
-            <label for="email">Email</label><br>
-            <input type="text" id="email" name="email"><br>
+            <!-- Name -->
+            <div>
+                <label for="name">Name</label><br>
+                <input type="text" id="name" name="name" placeholder="Enter your name"><br>
+            </div>
+
+            <!-- Email -->
+            <div>
+                <label for="email">Email</label><br>
+                <input type="text" id="email" name="_replyto" placeholder="Enter your email"><br>
+            </div>
             
-            <label for="message">Message (something short and sweet, please)</label><br>
-            <input type="text" id="message" name="message"><br>
-
-            <button>Submit</button>
+            <!-- Message text area-->
+            <div>
+                <label for="message">Message</label><br>
+                <textarea name="message" id="message" cols="50" placeholder="Enter message here, please keep short and sweet"></textarea><br>
+            </div>
+            
+            <!-- Submit button -->
+            <button type="submit" value="Send">Submit</button>
         </form>
     </section>
 
