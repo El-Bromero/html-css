@@ -1,10 +1,24 @@
-body {
-    background-color: lightgray;
+:root {
+    font-family: 'Open Sans';
 }
 
+body {
+    color: white;
+    background-color: #522546;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    text-align: center;
+    background-color: #e23e57;
+    padding: 0.5rem;
+}
+
+/* Nav Bar START */
 nav {
     font-size: 1.5rem;
-    background-color: darkgrey;
+    background-color: #88304e;
 }
 
 nav ul {
@@ -19,13 +33,30 @@ nav ul a {
     padding: 0.5rem;
     flex: auto;
     text-align: center;
+    color: #311d3f;
 }
 
 nav a:hover {
     /* color: grey; */
-    background-color: darkslategrey;
+    background-color: #311d3f;
     color: white;
 }
+
+@media(max-width : 600px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul a {
+        text-align: center;
+    }
+
+    img {
+        width: 100%;
+        height: auto;
+    }
+}
+/* Nav Bar CSS END */
 
 
 img {

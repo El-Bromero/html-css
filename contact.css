@@ -1,6 +1,24 @@
+:root {
+    font-family: 'Open Sans';
+}
+
+body {
+    color: white;
+    background-color: #522546;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    text-align: center;
+    background-color: #e23e57;
+    padding: 0.5rem;
+}
+
+/* Nav Bar START */
 nav {
     font-size: 1.5rem;
-    background-color: darkgrey;
+    background-color: #88304e;
 }
 
 nav ul {
@@ -15,11 +33,12 @@ nav ul a {
     padding: 0.5rem;
     flex: auto;
     text-align: center;
+    color: #311d3f;
 }
 
 nav a:hover {
     /* color: grey; */
-    background-color: darkslategrey;
+    background-color: #311d3f;
     color: white;
 }
 
@@ -36,4 +55,22 @@ nav a:hover {
         width: 100%;
         height: auto;
     }
+}
+/* Nav Bar CSS END */
+
+
+
+section {
+    margin-top: 2rem;
+}
+
+form button {
+    /* float: right; */
+}
+
+input[type=text] {
+    transition: width 0.1s ease-in-out;
+}
+input[type=text]:focus {
+    width: 50%;
 }
