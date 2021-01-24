@@ -1,0 +1,61 @@
+figure {
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: space-evenly; */
+    
+}
+
+img {
+    width: auto;
+    height: auto;
+}
+
+header {
+    text-align: center;
+}
+
+body {
+    background: #333 url('https://source.unsplash.com/daily') no-repeat center center/cover;
+
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+nav {
+    font-size: 1.5rem;
+    background-color: darkgrey;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul a {
+    cursor: pointer;
+    padding: 0.5rem;
+    flex: auto;
+    text-align: center;
+}
+
+nav a:hover {
+    /* color: grey; */
+    background-color: darkslategrey;
+    color: white;
+}
+
+@media(max-width : 600px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul a {
+        text-align: center;
+    }
+
+    img {
+        width: 100%;
+        height: auto;
+    }
+}
