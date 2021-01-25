@@ -5,13 +5,23 @@
 figure {
     display: flex;
     flex-wrap: wrap;
-    /* justify-content: space-evenly; */
+    flex-direction: row;
+    /* justify-content: space-around; */
+
+    /* padding: 0;
+    margin: 0;
+    list-style: none;
+    border: 1px solid silver; */
     
 }
 
 img {
-    width: auto;
     height: auto;
+    width: auto;
+    object-fit: cover;
+    vertical-align: bottom;
+    height: 40vh;
+    flex-grow: 1;
 }
 
 header {

@@ -1,3 +1,4 @@
+/* Uniform color theme for the three sites START */
 :root {
     font-family: 'Open Sans';
 }
@@ -14,6 +15,7 @@ header {
     background-color: #e23e57;
     padding: 0.5rem;
 }
+/* Uniform color theme for the three sites END */
 
 /* Nav Bar START */
 nav {
@@ -37,12 +39,56 @@ nav ul a {
 }
 
 nav a:hover {
-    /* color: grey; */
     background-color: #311d3f;
     color: white;
 }
+/* Nav Bar CSS END */
 
-@media(max-width : 600px) {
+/* Add spacing to form so it doesn't stick to nav bar */
+section {
+    margin-top: 2rem;
+}
+
+form div {
+    margin: 1rem;
+}
+
+/* Modify button to fit theme of page */
+form button {
+    background-color: #e23e57;
+    border: none;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 1rem;
+    margin: 1rem;
+}
+
+form button:hover {
+    background-color: #311d3f;
+}
+
+/* Input for form. Has animation when selected */
+input[type=text] {
+    width: 25%;
+    transition: width 0.4s ease-in-out;
+    height: 2rem;
+    font-size: 1.25rem;
+}
+input[type=text]:focus {
+    width: 50%;
+}
+
+textarea[name="message"] {
+    height: 5vh;
+    font-size: 1.25rem;
+}
+
+/* Responsive Section START */
+/* For mobile devices (small factor form) */
+@media(max-width : 500px) {
     nav ul {
         flex-direction: column;
     }
@@ -51,26 +97,33 @@ nav a:hover {
         text-align: center;
     }
 
-    img {
-        width: 100%;
-        height: auto;
+    form button {
+        float: right;
+        width: 90vw;
     }
+
+    input[type=text] {
+        width: 75vw;
+        transition: width 0.4s ease-in-out;
+    }
+
+    input[type=text]:focus {
+        width: 90vw;
+    } 
+
 }
-/* Nav Bar CSS END */
 
+/* For tablets (medium factor form) */
+@media(max-width : 800px) {
 
+    form button {
+        float: right;
+        width: 90vw;
+    }
 
-section {
-    margin-top: 2rem;
-}
+    textarea[name="message"] {
+        height: 10vh;
+        width: 100%;
+    }
 
-form button {
-    /* float: right; */
-}
-
-input[type=text] {
-    transition: width 0.1s ease-in-out;
-}
-input[type=text]:focus {
-    width: 50%;
 }
