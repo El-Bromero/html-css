@@ -1,27 +1,6 @@
-:root {
+/* Uniform color theme for the three sites START */
+root {
     font-family: 'Open Sans';
-}
-
-figure {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    /* justify-content: space-around; */
-
-    /* padding: 0;
-    margin: 0;
-    list-style: none;
-    border: 1px solid silver; */
-    
-}
-
-img {
-    height: auto;
-    width: auto;
-    object-fit: cover;
-    vertical-align: bottom;
-    height: 40vh;
-    flex-grow: 1;
 }
 
 header {
@@ -31,13 +10,12 @@ header {
 }
 
 body {
-    /* background: #333 url('https://source.unsplash.com/daily') no-repeat center center/cover;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; */
     color: white;
     background-color: #522546;
     margin: 0;
     padding: 0;
 }
+/* Uniform color theme for the three sites END */
 
 /* Nav Bar START */
 nav {
@@ -61,27 +39,36 @@ nav ul a {
 }
 
 nav a:hover {
-    /* color: grey; */
     background-color: #311d3f;
     color: white;
 }
-
-@media(max-width : 600px) {
-    nav ul {
-        flex-direction: column;
-    }
-
-    nav ul a {
-        text-align: center;
-    }
-
-    img {
-        width: 100%;
-        height: auto;
-    }
-}
 /* Nav Bar CSS END */
 
+/* Add margin to favorite type text */
+section h2 {
+    margin: 1rem;
+}
+
+/* Flexboxes for the images of my favorite collections */
+ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+ img {
+    
+    height: 100%;
+    width: auto;
+    object-fit: cover;
+    vertical-align: bottom;
+    height: 40vh;
+    flex-grow: 1;
+    justify-content: space-around;
+    border: .25rem solid #311d3f;
+}
+
+/* Responsive Section START */
+/* For mobile devices (small factor form) */
 @media(max-width : 600px) {
     nav ul {
         flex-direction: column;
@@ -93,6 +80,14 @@ nav a:hover {
 
     img {
         width: 100%;
-        height: auto;
+        height: 100%;
+    }
+}
+/* For tablets (medium factor form) */
+@media(max-width : 800px) {
+
+    img {
+        width: 100%;
+        height: 100%;
     }
 }
