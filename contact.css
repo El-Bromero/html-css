@@ -1,0 +1,129 @@
+/* Uniform color theme for the three sites START */
+:root {
+    font-family: 'Open Sans';
+}
+
+body {
+    color: white;
+    background-color: #522546;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    text-align: center;
+    background-color: #e23e57;
+    padding: 0.5rem;
+}
+/* Uniform color theme for the three sites END */
+
+/* Nav Bar START */
+nav {
+    font-size: 1.5rem;
+    background-color: #88304e;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul a {
+    cursor: pointer;
+    padding: 0.5rem;
+    flex: auto;
+    text-align: center;
+    color: #311d3f;
+}
+
+nav a:hover {
+    background-color: #311d3f;
+    color: white;
+}
+/* Nav Bar CSS END */
+
+/* Add spacing to form so it doesn't stick to nav bar */
+section {
+    margin-top: 2rem;
+}
+
+form div {
+    margin: 1rem;
+}
+
+/* Modify button to fit theme of page */
+form button {
+    background-color: #e23e57;
+    border: none;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 1rem;
+    margin: 1rem;
+}
+
+form button:hover {
+    background-color: #311d3f;
+}
+
+/* Input for form. Has animation when selected */
+input[type=text] {
+    width: 25%;
+    transition: width 0.4s ease-in-out;
+    height: 2rem;
+    font-size: 1.25rem;
+}
+input[type=text]:focus {
+    width: 40%;
+}
+
+textarea[name="message"] {
+    height: 5vh;
+    font-size: 1.25rem;
+}
+
+/* Responsive Section START */
+/* For mobile devices (small factor form) */
+@media(max-width : 500px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul a {
+        text-align: center;
+    }
+
+    form button {
+        float: right;
+        width: 90vw;
+    }
+
+    input[type=text] {
+        width: 75vw;
+        transition: width 0.4s ease-in-out;
+    }
+
+    input[type=text]:focus {
+        width: 90vw;
+    } 
+
+}
+
+/* For tablets (medium factor form) */
+@media(max-width : 800px) {
+
+    form button {
+        float: right;
+        width: 90vw;
+    }
+
+    textarea[name="message"] {
+        height: 10vh;
+        width: 100%;
+    }
+
+}

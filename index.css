@@ -1,0 +1,122 @@
+/* Uniform color theme for the three sites START */
+:root {
+    font-family: 'Open Sans';
+}
+
+body {
+    color: white;
+    background-color: #522546;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    text-align: center;
+    background-color: #e23e57;
+    padding: 0.5rem;
+}
+/* Uniform color theme for the three sites END */
+
+/* Nav Bar START */
+nav {
+    font-size: 1.5rem;
+    background-color: #88304e;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul a {
+    cursor: pointer;
+    padding: 0.5rem;
+    flex: auto;
+    text-align: center;
+    color: #311d3f;
+}
+
+nav a:hover {
+    background-color: #311d3f;
+    color: white;
+}
+/* Nav Bar CSS END */
+
+/* Figure is flexbox so the figcaption can correctly move with the image when page is smaller */
+figure {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+}
+
+img {
+    max-width: 50%;
+    height: auto;
+}
+
+figcaption {
+    align-self: flex-start;
+    margin: 1rem;
+    padding: 1rem;
+    background-color: #88304e;
+    width: 40%;
+}
+
+/* Give some style to text of personal info */
+section {
+    margin: 1rem;
+}
+
+section p {
+    padding: 1rem;
+    background-color: #88304e;
+}
+
+li {
+    padding: 0.5rem;
+    background-color: #88304e;
+    max-width: 25%;
+}
+
+/* Responsive Section START */
+/* For tablet devices (medium factor form) */
+@media(max-width : 800px) {
+    img {
+        align-self: center;
+    }
+    figcaption {
+        align-self: center;
+    }
+
+    li {
+        max-width: 50%;
+    }
+}
+
+/* For mobile devices (small factor form) */
+@media(max-width : 500px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul a {
+        text-align: center;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    figcaption {
+        align-self: center;
+        max-width: 100vw;
+    }
+
+    li {
+        max-width: 100%;
+    }
+}
+

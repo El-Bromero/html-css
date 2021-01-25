@@ -1,0 +1,93 @@
+/* Uniform color theme for the three sites START */
+:root {
+    font-family: 'Open Sans';
+}
+
+body {
+    color: white;
+    background-color: #522546;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    text-align: center;
+    background-color: #e23e57;
+    padding: 0.5rem;
+}
+/* Uniform color theme for the three sites END */
+
+/* Nav Bar START */
+nav {
+    font-size: 1.5rem;
+    background-color: #88304e;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul a {
+    cursor: pointer;
+    padding: 0.5rem;
+    flex: auto;
+    text-align: center;
+    color: #311d3f;
+}
+
+nav a:hover {
+    background-color: #311d3f;
+    color: white;
+}
+/* Nav Bar CSS END */
+
+/* Add margin to favorite type text */
+section h2 {
+    margin: 1rem;
+}
+
+/* Flexboxes for the images of my favorite collections */
+ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+ img {
+    
+    height: 100%;
+    width: auto;
+    object-fit: cover;
+    vertical-align: bottom;
+    height: 40vh;
+    flex-grow: 1;
+    justify-content: space-around;
+    border: .25rem solid #311d3f;
+}
+
+/* Responsive Section START */
+/* For mobile devices (small factor form) */
+@media(max-width : 600px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul a {
+        text-align: center;
+    }
+
+    img {
+        width: 100%;
+        height: 100%;
+    }
+}
+/* For tablets (medium factor form) */
+@media(max-width : 800px) {
+
+    img {
+        width: 100%;
+        height: 100%;
+    }
+}
